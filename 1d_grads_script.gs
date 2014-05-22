@@ -1,0 +1,6 @@
+'set y 0 2'
+'set t 1 50'
+'set gxout grfill'
+'set mpdraw off'
+'set looping on'
+'d temp'
