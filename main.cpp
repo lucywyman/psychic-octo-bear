@@ -49,10 +49,8 @@ void diffusion(Inputs inputs, float* original){
 			original[i] = new_temp;
 			printf("%.2f", original[i]);
 			cout<<"  ";
-			//cout<<setprecision(4)<<original[i]<<"  ";
-			heat_bin.write(reinterpret_cast<char*>(&original[i]), sizeof(original[i]));
 		}
-		//heat_bin.write((char*)original, sizeof(float)*inputs.position_intervals*3);
+		heat_bin.write((char*)original, sizeof(float)*inputs.position_intervals);
 		cout<<endl<<endl;
 	}
 	heat_bin.close();
